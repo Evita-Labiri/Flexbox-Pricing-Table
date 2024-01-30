@@ -1,0 +1,85 @@
+.pricing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 12px;
+}
+
+.pricing-plan {
+    background: linear-gradient(to top right,rgba(215, 141, 31, 0.918) , rgba(30, 6, 149, 0.847));
+    flex: 1;
+    max-width: 400px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10%;
+    text-align: center;  
+    box-shadow: 4px 5px 5px rgb(27, 27, 27, 0.9);         
+}   
+
+.pricing-plan:hover {
+    flex: 1.5;        
+    box-shadow: 4px 5px 5px rgb(27, 27, 27, 1);         
+}  
+
+.plan-title {
+    font-family: "Honk", system-ui;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.plan-price {
+    font-family: "Exo 2", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px white;
+}
+
+.plan-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.plan-button {
+    background-color: rgba(101, 62, 199, 0.779);
+    color: rgb(220, 204, 232);
+    border: none;
+    border-radius: 10%;
+    height: 25px;
+    width: 100px;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+}
+
+.plan-button:hover{
+    background-color: rgba(98, 20, 118, 0.732);
+    box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+}
+
+/* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 770px) {
+    .pricing-container{
+        flex-direction: column;
+        height: 180vh;       
+    }
+
+    .pricing-plan {
+        width: 40%;
+    }
+
+    .plan-button:hover{
+        background-color: rgba(98, 20, 118, 0.732);
+        box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.8);
+    }
+
+    .pricing-plan:hover {
+        flex: 1.1;        
+        box-shadow: 4px 5px 5px rgb(27, 27, 27, 1);         
+    }  
+}
